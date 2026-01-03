@@ -10,6 +10,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
 # Custom CSS for pink theme and styling
 st.markdown("""
 <style>
@@ -18,7 +19,7 @@ st.markdown("""
     
     /* Global styling */
     .stApp {
-        background: linear-gradient(180deg, #fce7f3 0%, #ffffff 100%);
+        background: linear-gradient(180deg, #fce7f3 0%, #000 100%);
     }
     
     /* Hide Streamlit branding */
@@ -30,16 +31,14 @@ st.markdown("""
     .main-title {
         font-family: 'Pacifico', cursive;
         font-size: 3rem;
-        background: linear-gradient(135deg, #ec4899, #f9a8d4);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #1a1a1a;
         text-align: center;
         margin-bottom: 0.5rem;
     }
     
     .subtitle {
         text-align: center;
-        color: #831843;
+        color: #1a1a1a;
         opacity: 0.8;
         font-size: 1.2rem;
         margin-bottom: 2rem;
@@ -53,6 +52,11 @@ st.markdown("""
         text-align: center;
         box-shadow: 0 10px 40px rgba(236, 72, 153, 0.2);
     }
+
+    /* Ensure welcome screen text is black (words only) */
+    .welcome-container, .welcome-container * {
+        color: #000 !important;
+    }
     
     .welcome-icon {
         font-size: 5rem;
@@ -62,13 +66,13 @@ st.markdown("""
     .welcome-title {
         font-family: 'Pacifico', cursive;
         font-size: 2rem;
-        color: #831843;
+        color: #1a1a1a;
         margin-bottom: 1rem;
     }
     
     .welcome-text {
-        color: #831843;
-        opacity: 0.7;
+        color: #2d2d2d;
+        opacity: 0.8;
         font-size: 1.1rem;
         margin-bottom: 2rem;
     }
@@ -76,7 +80,7 @@ st.markdown("""
     /* Button styling */
     .stButton>button {
         background: linear-gradient(135deg, #ec4899, #f9a8d4);
-        color: white;
+        color: #000;
         border: none;
         padding: 1rem 3rem;
         border-radius: 2rem;
@@ -110,14 +114,14 @@ st.markdown("""
     .option-title {
         font-size: 1.3rem;
         font-weight: 700;
-        color: #831843;
+        color: #1a1a1a;
         margin-bottom: 0.3rem;
     }
     
     .option-desc {
         font-size: 0.9rem;
-        color: #831843;
-        opacity: 0.7;
+        color: #2d2d2d;
+        opacity: 0.8;
     }
     
     /* Day card styling */
@@ -148,14 +152,14 @@ st.markdown("""
     /* Header styling */
     .page-header {
         background: linear-gradient(135deg, #ec4899, #f9a8d4);
-        color: white;
+        color: #000;
         padding: 1.5rem;
         border-radius: 1rem;
         margin-bottom: 2rem;
     }
     
     .page-header h2 {
-        color: white;
+        color: #000;
         margin: 0;
     }
     
@@ -181,7 +185,7 @@ st.markdown("""
     .section-title {
         font-size: 1.3rem;
         font-weight: 700;
-        color: #831843;
+        color: #1a1a1a;
         margin-bottom: 1rem;
     }
     
