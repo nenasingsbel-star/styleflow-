@@ -1,15 +1,4 @@
 import streamlit as st
-
-# This block hides the menu and the footer to make it look like a real app
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_all_html=True)
-import streamlit as st
 from datetime import datetime, timedelta
 import base64
 from pathlib import Path
@@ -482,4 +471,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
